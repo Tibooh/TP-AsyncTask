@@ -5,19 +5,58 @@
     android:orientation="vertical"
     android:weightSum="1">
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_asyncTask"
+        android:hint="Résultat de la requête asynchrone"
+        />
+
     <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_async"
+        android:layout_below="@+id/text_asyncTask"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#00009A"
+        android:text="Executer requête asynchrone"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_task"
+        android:layout_below="@+id/button_async"
+        android:hint="Résultat de la requête"
+        android:layout_marginTop="50dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_task"
+        android:id="@+id/button_sync"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#9A0000"
+        android:text="Executer requête"
+        />
+
+
+ <!--   <Button
         android:layout_marginTop="10dp"
         android:id="@+id/btnLaunch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Lancer la tâche avec AsyncTask" />
+        android:text="Lancer la tâche asynchrone 1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Progression de la tâche asynchrone:" />
+        android:text="Progression de la tâche asynchrone 1" />
 
     <ProgressBar
         android:id="@+id/pBAsync"
@@ -27,32 +66,13 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.05" />
 
-
-
     <Button
         android:layout_marginTop="10dp"
         android:id="@+id/btnLaunch2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Lancer la tâche avec AsyncTask" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Progression de la tâche asynchrone:" />
-
-    <ProgressBar
-        android:id="@+id/pBAsync2"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="750dp"
-        android:layout_margin="10dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.05" />
-
-
-
+        android:text="Lancer la tâche asynchrone 2" />-->
 
 
 </LinearLayout>
