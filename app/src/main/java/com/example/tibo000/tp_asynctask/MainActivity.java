@@ -30,14 +30,13 @@ public class MainActivity extends Activity {
     private Button mButton;
     private Button mButton2;
 
-    /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
        // pour requete http
-        tvAsyncTask = (TextView) findViewById(R.id.text_asyncTask);
+/*        tvAsyncTask = (TextView) findViewById(R.id.text_asyncTask);
         bAsyncTask = (Button) findViewById(R.id.button_async);
         bAsyncTask.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +56,7 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 localeHttpGetRequest();
             }
-        });
+        });*/
 
         // 2 autres exemples
 /*        mProgressBar = (ProgressBar) findViewById(R.id.pBAsync);
@@ -81,7 +80,8 @@ public class MainActivity extends Activity {
         });*/
     }
 
-    /**execution asynchrone*/
+    /**execution asynchrone requette http*/
+/*
     private class AsyncHttpGetRequest extends AsyncTask<Void, Void, Void> {
         private String httpAnswer = null;
 
@@ -135,10 +135,11 @@ public class MainActivity extends Activity {
             return httpAnswer;
         }
     }
+*/
 
 
-    /**execution synchrone*/
-    private String localeHttpGetRequest(){
+    /**execution synchrone requete http*/
+  /*  private String localeHttpGetRequest(){
         HttpURLConnection urlConnection = null;
         InputStream inputStream = null;
         StringBuffer buffer = null;
@@ -172,12 +173,12 @@ public class MainActivity extends Activity {
             return null;
         }
     }
-
+*/
 
 
     /** Autres exemple */
     /** 1ère tâche asynchrone*/
-    private class AsyncTaskRunner1 extends AsyncTask<Void, Integer, Void>
+ /*   private class AsyncTaskRunner1 extends AsyncTask<Void, Integer, Void>
     {
         @Override
         protected void onProgressUpdate(Integer... values){
@@ -200,10 +201,10 @@ public class MainActivity extends Activity {
             }
             return null;
         }
-    }
+    }*/
 
     /** 2 eme tâche asynchrone*/
-    private class AsyncTaskRunner2 extends AsyncTask<String, String, String>
+  /*  private class AsyncTaskRunner2 extends AsyncTask<String, String, String>
     {
 
         private String resp;
@@ -240,5 +241,5 @@ public class MainActivity extends Activity {
                     "Wait for 5 seconds");
         }
 
-    }
+    }*/
 }
